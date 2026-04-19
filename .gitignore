@@ -15,3 +15,7 @@
 local.properties
 google-services.json 
 *.keystore
+.cxx/
+/build/
+*.jks
+luontopeli
