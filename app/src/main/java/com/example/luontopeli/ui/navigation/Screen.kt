@@ -32,8 +32,10 @@ sealed class Screen(
     /** Tilastonäkymä – yhteenvetotilastot ja kävelyhistoria */
     object Stats : Screen("stats", "Tilastot", Icons.Filled.BarChart)
 
+    object Profile : Screen("profile", "Profiili", Icons.Filled.PersonPin)
+
     companion object {
         /** Lista kaikista näkymistä alanäkymäpalkkia varten */
-        val bottomNavScreens = listOf(Map, Camera, Discover, Stats)
+        val bottomNavScreens = listOf(Map, Camera, Discover, Stats, Profile)
     }
 }

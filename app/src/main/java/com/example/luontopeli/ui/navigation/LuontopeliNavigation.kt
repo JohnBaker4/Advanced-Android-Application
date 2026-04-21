@@ -1,5 +1,6 @@
 package com.example.luontopeli.ui.navigation
 
+import androidx.compose.remote.creation.profile.Profile
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
@@ -9,6 +10,7 @@ import com.example.luontopeli.ui.map.MapScreen
 import com.example.luontopeli.camera.CameraScreen
 import com.example.luontopeli.ui.discover.DiscoverScreen
 import com.example.luontopeli.ui.stats.StatsScreen
+import com.example.luontopeli.ui.profile.ProfileScreen
 
 /**
  * Sovelluksen navigointikomponentti (NavHost).
@@ -45,6 +47,10 @@ fun LuontopeliNavHost(
         // Tilastonäkymä – yhteenvetotilastot ja kävelyhistoria
         composable(Screen.Stats.route) {
             StatsScreen()
+        }
+        // Profiilinäkymä
+        composable(Screen.Profile.route) {
+            ProfileScreen()
         }
     }
 }
